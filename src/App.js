@@ -4,7 +4,7 @@ import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className="App w-screen h-screen overflow-y-auto overflow-x-hidden bg-black bg-opacity-75 text-white">
+    <div className="App w-screen h-screen overflow-y-auto overflow-x-hidden  text-white">
       <ImageBackground>
         <Nav />
       </ImageBackground>

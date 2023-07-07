@@ -1,18 +1,14 @@
 import React from 'react'
 
-const NavItem = ({text}) => {
+const NavItem = ({text, icon}) => {
 
-    const dynamicStyles = () => {
-        if (text === "Contact") {
-            return "mx-6 flex px-6 border-white border-2 h-8 items-center justify-center rounded-full"; 
-        } else {
-            return "px-8 h-full pb-2 pt-8";
-        }
-    }
-
+    console.log(icon);
     return (
-        <div className={`flex cursor-pointer hover:bg-white hover:text-black text-sm ${dynamicStyles()}`}>
-            {text}
+        <div className={`flex cursor-pointer flex-row justify-start mb-6 items-center`}>
+            {icon}
+            <p className="ml-2 font-bold">
+                {text}
+            </p>
         </div> 
     )
 };
