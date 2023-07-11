@@ -6,9 +6,35 @@ import Headshot from '../../shared/Headshot';
 
 const Nav = () => {
 
-    const renderLinks = () => {
-        const links = [{to: "", text: "Home", icon: <FiHome color='#fff' size={22} />},{to: "", text: "About", icon: <FiUser color="#fff" size={22} />}, {to: "", text: "Portfolio", icon: <FiBookOpen color="#fff" size={22} />}, {to: "", text: "Services", icon: <FiServer color="#fff" size={22} />}, {to: "", text: "Contact", icon: <FiMail color={"#fff"} size={22} />}, ];
+    const links = [
+        {
+            to: "", 
+            text: "Home", 
+            icon: <FiHome color='#fff' size={22} />
+        },
+        {
+            to: "", 
+            text: "About", 
+            icon: <FiUser color="#fff" size={22} />
+        }, 
+        {
+            to: "", 
+            text: "Portfolio", 
+            icon: <FiBookOpen color="#fff" size={22} />
+        }, 
+        {
+            to: "", 
+            text: "Services", 
+            icon: <FiServer color="#fff" size={22} />
+        }, 
+        {
+            to: "", 
+            text: "Contact", 
+            icon: <FiMail color={"#fff"} size={22} />
+        }, 
+    ];
 
+    const renderLinks = () => {
         return links.map((link, i) => <NavItem icon={link.icon} text={link.text} key={`${i}-${link.text}`} /> );
     }
 
